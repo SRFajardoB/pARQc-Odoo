@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pARQc-Odoo
+    env: docker
+    plan: free
+    repo: https://github.com/SRFajardoB/pARQc-Odoo
+    branch: main
+    region: oregon
+    dockerContext: .
+    healthCheckPath: /
